@@ -1,6 +1,6 @@
 class RubyLearning < Sinatra::Base
   use Rack::Auth::Basic, "Restricted Area" do |username, password|
-    username == 'admin' and password = 'rlearning'
+    username == 'admin' and password == 'rlearning'
   end
 
   not_found do
